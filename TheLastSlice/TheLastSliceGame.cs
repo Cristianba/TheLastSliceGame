@@ -268,8 +268,10 @@ namespace TheLastSlice
                 }
                 else
                 {
-                    CurrentScreen = GameOverMenu;
-                    GameOverMenu.Awake();
+                    CurrentScreen = GameWinMenu;
+                    GameWinMenu.LastPlayerScore = Player.Score;
+                    //CurrentScreen = GameOverMenu;
+                    //GameOverMenu.Awake();
                 }
 
                 GameState = GameState.Menu;
